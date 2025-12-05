@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #000000, #00141f, #002b3f);
+            color: white;
+        }
+        nav {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            border-bottom: 2px solid #00c4ff;
+            box-shadow: 0 4px 10px rgba(0, 196, 255, 0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav h1 {
+            color: #00c4ff;
+            font-size: 26px;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 28px;
+            padding: 8px 80px;
+            border-radius: 8px;
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        nav ul li a:hover {
+            background: #00c4ff;
+            color: black;
+            box-shadow: 0 0 10px #00c4ff;
+        }
+        #contact {
+            width: 70%;
+            max-width: 700px;
+            margin: 130px auto;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 12px;
+            background: rgba(0, 0, 0, 0.65);
+            text-align: center;
+            backdrop-filter: blur(8px);
+        }
+
+        #contact form input,
+        #contact form textarea {
+            width: 80%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #00c4ff;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        #contact button {
+            padding: 10px 20px;
+            background: #00c4ff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        #contact button:hover {
+            background: white;
+            color: #00c4ff;
+            box-shadow: 0 0 12px #00c4ff;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1>My Portfolio</h1>
+        <ul>
+            <li><a href="mypage.html">Home</a></li>
+        </ul>
+    </nav>
+    <section id="contact">
+        <h2 style="font-size:32px; color:#00c4ff; font-weight:bold;">Contact Me</h2>
+
+        <p style="font-size:18px; color:white;">
+            Feel free to reach out to me for collaborations and projects<br>
+            <strong>📞 Phone:</strong> 8092399675 <br>
+            <strong>📧 Email:</strong>
+            <a href="mailto:vashistrajput777@gmail.com" style="color:#00c4ff;">
+                vashistrajput777@gmail.com
+            </a>
+        </p>
+
+        <form id="contactForm" style="display:flex; flex-direction:column; gap:10px; align-items:center;">
+
+            <input type="text" id="name" name="name" placeholder="Your Name">
+
+            <input type="email" id="email" name="email" placeholder="Your Email">
+
+            <textarea id="message" name="message" placeholder="Your Message" rows="4"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            
+            let name = document.getElementById("name").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let message = document.getElementById("message").value.trim();
+
+            if (name === "" || email === "" || message === "") {
+                alert("⚠ Please fill all fields before submitting!");
+                event.preventDefault();
+            } 
+            else {
+                alert("✔ Your message has been sent successfully!");
+            }
+        });
+    </script>
+
+</body>
+</html>

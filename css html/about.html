@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+    body {
+        background-color: #050e17;
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+    }
+
+    nav {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(12px);
+        border-bottom: 2px solid #00c4ff;
+        box-shadow: 0 4px 10px rgba(0, 196, 255, 0.2);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 20px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    nav h1 {
+        color: #00c4ff;
+        font-size: 26px;
+        margin: 0;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 28px;
+        padding: 8px 80px;
+        border-radius: 8px;
+        transition: 0.3s;
+        text-align: center;
+    }
+
+    nav ul li a:hover {
+        background: #00c4ff;
+        color: black;
+        box-shadow: 0 0 10px #00c4ff;
+    }
+
+    #about {
+        width: 60%;
+        margin: 50px auto;
+        padding: 30px;
+        border: 2px solid #00aaff;
+        border-radius: 15px;
+        background: linear-gradient(135deg, rgba(0, 30, 60, 0.85), rgba(0, 10, 25, 0.85));
+        text-align: center;
+        color: #d9ecff;
+        box-shadow: 0 0 20px rgba(0, 140, 255, 0.5);
+        transition: 0.3s ease;
+    }
+
+    #about:hover {
+        transform: scale(1.02);
+        box-shadow: 0 0 35px rgba(0, 170, 255, 0.7);
+    }
+
+    #about h2 {
+        font-size: 38px;
+        margin: 0;
+        color: #00c4ff;
+        text-shadow: 0 0 10px #00c4ff;
+        font-family: "Albertus Extra Bold", sans-serif;
+    }
+
+    #about p {
+        font-size: 18px;
+        margin: 14px 0;
+        color: #e6f5ff;
+    }
+
+    #about h3 {
+        color: #37d0ff;
+        font-size: 28px;
+        margin-top: 22px;
+        text-shadow: 0 0 8px #37d0ff;
+    }
+
+    #about ul {
+        list-style: none;
+        padding: 0;
+        font-size: 18px;
+        line-height: 1.7;
+        text-align: left;
+        display: inline-block;
+        color: #cfeaff;
+    }
+
+    #about li::before {
+        content: "▸ ";
+        color: #00c4ff;
+        font-weight: bold;
+    }
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h1>My Portfolio</h1>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <h2>HOBBIES</h2>
+
+    <p>
+        I enjoy <strong>online games</strong> and exploring <strong>Quantum physics</strong>.<br>
+        Keeps me curious, competitive, and always learning!
+    </p>
+
+    <h3>Skills</h3>
+
+    <ul>
+        <li>C Programming</li>
+        <li>HTML & CSS</li>
+        <li>Basic Python</li>
+        <li>Blockchain Testnet Experience</li>
+    </ul>
+
+    <p>I am constantly improving and love learning new technologies.</p>
+</section>
+
+</body>
+</html>

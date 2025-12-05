@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - My Web Page</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML Web page structure">
+    <meta name="keywords" content="HTML, Website, Multipage">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            background: linear-gradient(135deg, #0a0f24, #001f3f);
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 20px;
+            background: #001f3f;
+            border-bottom: 3px solid #00c4ff;
+        }
+
+        header h1 {
+            margin: 5px 0;
+            font-size: 40px;
+            color: #00c4ff;
+        }
+
+        nav {
+            background: #0b2340;
+            padding: 20px;
+            border-bottom: 2px solid #00c4ff;
+        }
+
+        nav a {
+            color: white;
+            margin: 200px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #00c4ff;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap-reverse;
+            padding: 40px 20px;
+        }
+
+        .section-box {
+            width: 30%;
+            min-width: 280px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 2px solid #00c4ff;
+            border-radius: 12px;
+            text-align: center;
+            margin: 20px 10px;
+            box-shadow: 0 4px 15px rgba(0, 196, 255, 0.3);
+            transition: 0.3s ease-in-out;
+        }
+
+        .section-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 22px rgba(0, 196, 255, 0.5);
+        }
+
+        .section-box h2, .section-box h1 {
+            color: #00c4ff;
+            margin-bottom: 10px;
+        }
+        .center-image {
+        width: 30%;
+        min-width: 280px;
+        display: flex;
+        justify-content: center;
+        margin: 20px 10px;
+    }
+
+    .center-image img {
+    width: 100%;
+    max-width: 250px; /* adjust this if you want bigger/smaller */
+    border-radius: 12px;
+    border: 2px solid #00c4ff;
+    box-shadow: 0 4px 15px rgba(0, 196, 255, 0.3);
+    transition: 0.3s ease-in-out;
+    }
+
+    .center-image img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 22px rgba(0, 196, 255, 0.5);
+    }
+
+
+        footer {
+            background: #000e1a;
+            color: white;
+            text-align: center;
+            padding: 25px 0;
+            border-top: 3px solid #00c4ff;
+            margin-top: 40px;
+        }
+
+        footer h3, footer p {
+            margin: 5px 0;
+        }
+        @media (max-width: 900px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .section-box {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Home - My WebPage</h1>
+        <p>My First HTML web page structure.</p>
+    </header>
+	<nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="contact.html">Contact</a>
+	</nav>
+    <div class="container">    
+
+    <div class="section-box">
+        <h1>YOO!!!</h1>
+        <p>
+            Hey there! I’m <strong>Vashist Narayan Singh</strong>, a 
+            <strong>B.Tech CSE</strong> student at 
+            <strong>Shoolini University</strong>.<br><br>
+            Excited to explore coding, technology, and real-world problem solving.
+        </p>
+    </div>
+
+    <div class="center-image">
+        <img src="vashist.jpg" alt="Profile Photo">
+    </div>
+
+    <div class="section-box">
+        <h2>HOBBIES</h2>
+        <p>
+            I enjoy <strong>online games</strong> and exploring 
+            <strong>Crypto testnets</strong>.<br>
+            Keeps me curious, competitive, and always learning!
+        </p>
+    </div>
+
+    <div class="section-box">
+        <h2>Contact Me</h2>
+        <p>
+            <strong>Phone:</strong> 8092399675 <br>
+            <strong>Email:</strong> vashistrajput777@gmail.com
+        </p>
+    </div>
+
+</div>

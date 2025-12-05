@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: rgb(39, 39, 99);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            text-align: center;
+            padding: 40px;
+            width: 60%;
+            border: 3px solid #333;
+            border-radius: 12px;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+        }
+        h1 {
+            font-size: 45px;
+            margin: 0 0 10px 0;
+            color: #00c4ff;
+            font-family: "Albertus Extra Bold", sans-serif;
+        }
+        p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        #datetime {
+            font-size: 22px;
+            margin-bottom: 25px;
+            font-weight: bold;
+            color: #ffd700;
+        }
+        .btn {
+            padding: 14px 35px;
+            font-size: 20px;
+            background: white;
+            border: 3px solid black;
+            border-radius: 10px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #00c4ff;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Website</h1>
+        <div id="datetime"></div>
+        <p>Click below to open my personal webpage</p>
+        <button class="btn" onclick="location.href='mypage.html'">
+            Enter Website
+        </button>
+    </div>
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+            const options = {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            };
+            document.getElementById("datetime").innerHTML = now.toLocaleString('en-US', options);
+        }
+        setInterval(updateDateTime, 1000);
+        updateDateTime();
+    </script>
+</body>
+</html>
